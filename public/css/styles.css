@@ -1,3 +1,28 @@
 * {
     font-family: 'Montserrat';
 }
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.navbar{
+    height: 60px;
+}
+
+#logo{
+    font-weight: 600;
+}
+
+span{
+    color: orange;
+    font-weight: 900;
+}
+
+.produtos{
+    padding-top: 90px;
+}
+
+
+
+
