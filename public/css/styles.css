@@ -1,9 +1,72 @@
 * {
     font-family: 'Montserrat';
+    --cor-laranja: #ff9531;
+
 }
 
 body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
     background-color: rgb(231, 231, 231);
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.btn-warning{
+    background-color: var(--cor-laranja);
+    font-weight: 600;
+    border-color: var(--cor-laranja);
+}
+
+.btn-outline-warning{
+    font-weight: 600;
+    border-color: var(--cor-laranja);
+    color: var(--cor-laranja);
+}
+
+.btn-warning:hover{
+    background-color: #fda049;
+}
+
+.btn-outline-warning:hover{
+    background-color: var(--cor-laranja);
+}
+
+
+section{
+    padding-top: 90px;
+}
+
+#search-container input:not(:placeholder-shown){
+    border-color:#fda049;
+    border-width: 3px;
+}
+
+#search-container input:placeholder-shown{
+    border-color: #ffcfa1;
+    border-width: 2px;
+}
+
+#formulario{
+    text-align: center;
+    padding-left: 20px;
+}
+
+#btn-comprar{
+    color: #fff;
 }
 
 .navbar{
@@ -15,14 +78,84 @@ body{
 }
 
 span{
-    color: orange;
+    color: var(--cor-laranja);
     font-weight: 900;
 }
 
-.produtos{
-    padding-top: 90px;
+#search-container {
+    background-image: url("../img/2.png");
+    background-size: auto;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
 }
 
+#search-container h1{
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
 
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
 
+#products-container{
+    padding: 50px;
+}
 
+#products-container h2{
+    margin-bottom: 10px;
+}
+
+#products-container .subtitle{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container{
+    display: flex;
+}
+
+#products-container .card{
+    flex: 1 1 0;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#products-container img{
+    max-height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-valor{
+    font-size: 20px;
+    color: #757575;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background-color: #212529;
+    color: #fff;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+footer p{
+    margin-bottom: 0;
+}
