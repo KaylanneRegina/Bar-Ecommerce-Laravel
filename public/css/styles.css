@@ -24,6 +24,16 @@ header{
     padding: 0;
 }
 
+.msg{
+    background-color: #D4EDDA;
+    color: #155734;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 
 .btn-warning{
     background-color: var(--cor-laranja);
@@ -46,8 +56,8 @@ header{
 }
 
 
-section{
-    padding-top: 90px;
+main{
+    padding-top: 55px;
 }
 
 #search-container input:not(:placeholder-shown){
@@ -67,6 +77,10 @@ section{
 
 #btn-comprar{
     color: #fff;
+}
+
+#btn-submit{
+    margin-top: 20px;
 }
 
 .navbar{
@@ -120,11 +134,12 @@ span{
 }
 
 #products-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
     margin: 5px;
+    margin: .5%;
 }
 
 #products-container img{
@@ -158,4 +173,84 @@ footer{
 
 footer p{
     margin-bottom: 0;
+}
+
+#product-create-container{
+    padding: 30px;
+}
+
+#product-create-container label{
+    font-weight: bold;
+}
+
+#product-create-container input:not(:placeholder-shown),
+#product-create-container select:not(:placeholder-shown),
+#product-create-container textarea:not(:placeholder-shown){
+    font-size: 15px;
+    border-color:#fda049;
+    border-width: 3px;
+}
+
+#product-create-container input:placeholder-shown,
+#product-create-container select:placeholder-shown,
+#product-create-container textarea:placeholder-shown{
+    font-size: 15px;
+    border-color: #ffcfa1;
+    border-width: 2px;
+}
+
+
+#image-container,
+#info-container{
+    margin-top: 30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#descricao-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #fda049;
+    margin-right: 5px;
+}
+
+#info-container #product-submit{
+    margin: 20px 0;
+}
+
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+    display: flex;
+}
+
+.items{
+    color: black;
+    font-weight:300
+}
+
+.link-ver-todos{
+    color: #ff9531;
+    
 }
