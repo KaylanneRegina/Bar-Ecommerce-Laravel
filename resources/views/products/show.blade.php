@@ -14,8 +14,9 @@
         <p class="product-categoria"> <ion-icon name="apps-outline"></ion-icon> {{ $product->categoria }}</p>
         <p class="product-compras"> <ion-icon name="cart-outline"></ion-icon> 36 pessoas compraram</p>
         <p class="products-valor"><ion-icon name="cash-outline"></ion-icon> {{ $product->valor }} Reais</p>
-
-        <a href="#" class="btn btn-warning" id="product-submit">Comprar</a>
+        <form action="{{ route('addcarrinho') }}">
+            <a href="#" class="btn btn-warning" id="product-submit">Comprar</a>
+        </form>
         <h3>O combo conta com:</h3>
         <ul id="items-list">
         @foreach($product->items as $item)

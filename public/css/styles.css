@@ -254,3 +254,8 @@ footer p{
     color: #ff9531;
     
 }
+
+.md.hydrated{
+    font-size: 24px;
+    margin-right: 6px;
+}

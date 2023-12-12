@@ -35,6 +35,8 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="/">Produtos</a></li>
                             <li class="nav-item"><a class="nav-link" href="/products/create">Cadastrar Produtos</a></li>
+                            <li class="nav-item"> <a href="/" class="nav-link"> <ion-icon name="cart-outline"></ion-icon></a></li>
+                            
                             <div class="pe-5">
                                 <button type="button" class="btn btn-warning">Login</button>
                                 <button type="button" class="btn btn-outline-warning">Cadastre-se</button>
